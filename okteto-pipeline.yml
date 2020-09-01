@@ -1,4 +1,5 @@
 deploy:
+  - kubectl apply -f mongodb.yml
   - okteto build -t okteto.dev/guestbook:latest
   - kubectl apply -f k8s.yml
 devs:
