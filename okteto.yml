@@ -2,3 +2,5 @@ name: guestbook
 command: bash
 sync:
   - .:/usr/src/app
+persistentVolume:
+  enabled: false
