@@ -1,8 +1,4 @@
 name: guestbook
-image: okteto/python:3
 command: bash
-forward:
-  - 8080:8080
-remote: 2222
 sync:
   - .:/usr/src/app

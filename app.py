@@ -25,7 +25,7 @@ def init_database():
     for m in mongo.db.messages.find():
         if m["message"] == "Hi" and m["user"] == "Pablo":
             return
-    mongo.db.messages.insert_one({"message": "Hi", "user": "pablo"})
+    mongo.db.messages.insert_one({"message": "Hi", "user": "Pablo"})
 
 
 if __name__ == '__main__':
